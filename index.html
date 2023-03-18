@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="es">
+
+    <head>
+
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="icon" type="image/x-icon" href="css/imagenes/logopng.png"> 
+        <link rel="stylesheet" href="css/reset.css">
+        <title>Mecha Industries</title>
+        <link rel="stylesheet" href="css/estilos.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <script src="js/function.js"></script>
+        <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500&display=swap" rel="stylesheet">
+    </head>
+
+    <body>
+        
+        <header class="container">
+
+                    <div class="menu__item-1" href="#">
+                       <a class="menu__link" href="#sobreNosotros">Home</a>
+                    </div>
+                    
+                    <div class="menu__item-2">
+                        <img src="css/imagenes/logopng.png" alt="Logo de empresa" class="menu__item-2">
+                    </div>
+                    
+                    <div class="menu__item-3" href="#">
+                        <a class="menu__link" href="#contacto">Contacto</a> 
+                    </div>
+    
+        </header>
+        
+        <div class="sobreNosotros" id="sobreNosotros">
+           
+            <div class="sobreNosotros__info">
+                
+                <p>"Somos una empresa que sueña con un futuro mejor, innovando con nuevas tecnologías enfocadas en la creación
+                    de robots para facilitar la calidad de vida en el planeta tierra. Somos parte de muchos proyectos que se están
+                    llevando a cabo para garantizar esa vida futurista que muchos sueñan con tener."
+
+                </p>
+                <h1 class="sobreNosotros__title">- Mecha Industries.</h1>
+            </div>
+        </div>
+
+        <div class="proyectoMazinger">
+            <div class="proyectoMazinger__info">
+                <h1 class="proyectoMazinger__titulo">Proyecto Mazinger</h1>
+
+                <p>Nuestro proyecto principal es el famoso Mazinger que fue creado con el fin de proteger 
+                    a la raza humana ante posibles amenazas alienígenas que puedan llegar a poner en riesgo nuestras vidas.
+                    Fue realizado por las mentes mas inteligentes de nuestro planeta y se mantiene en mantenimiento a diario
+                    por miles de personas.
+
+                </p>
+            </div>
+
+            <div class="proyectoMazinger__imagen">
+                
+                <img src="css/imagenes/primerprototipo.jpg" alt="Robot Mazinger" class="proyectoMazinger__imagen">
+
+            </div>
+
+        </div>
+        
+        <div class="proyectoIronMan">
+
+            <div class="proyectoIronMan__info">
+
+                <h1 class="proyectoIronMan__titulo">Proyecto Iron-Man</h1>
+
+                <p>Este proyecto denominado "El hombre de hierro" en inglés, fue llevado a cabo junto al gobierno de
+                    la mayoría de los países. Se trata de mejorar el equipamento para aquellas personas cuya seguridad
+                    esta en peligro y hacer que su salud no sostenga un problema a la hora de realizar sus actividades
+                    laborales. 
+
+                </p>
+
+            </div>
+
+            <div class="proyectoIronMan__imagen">
+                <img src="css/imagenes/ironmansuits.jpg" alt="fabricacion de trajes" class="proyectoIronMan__imagen">
+           
+            </div>
+
+        </div>
+        
+        <div class="proyectoTerminator">
+
+            <div class="proyectoTerminator__info">
+
+                <h1 class="proyectoTerminator__titulo">Proyecto Terminator</h1>
+                
+                <p>Nuestro proyecto más polémico hasta el momento. Se trata de la construcción de robots de alta complejidad
+                    equipados con la tecnología armamentística más avanzada del planeta. Su misión es proteger y servir a los
+                    humanos y utilizarse en conflictos sociales que requieran un ejército sin la necesidad de que humanos
+                    pongan su vida en riesgo. Su venta y distribución esta totalmente prohibida.
+                </p>
+                <br>
+                <div class="button">
+                    <button class="botonTerminator" onclick="alertaBoton()">Desea comprar uno? Click aquí</button>
+                </div>
+
+            </div>
+
+            <div class="proyectoTerminator__imagen">
+
+                <img src="css/imagenes/terminatorrobot.jpg" alt="Ejército Terminator" class="proyectoTerminator__imagen">
+           
+            </div>
+
+        </div>
+
+
+        <div class="mensajeFinal">
+
+            <h1 class="mensajeFinal__titulo">"Amamos a nuestro planeta"</h1>
+
+            <p class="mensajeFinal__info">Mecha Industries es de las pocas empresas que se mantiene al tanto de las consecuencias ambientales que invaden
+                nuestro planeta. Por eso como pioneros en la ciber-tecnología ideamos un escuadrón de androides cuyo objetivo
+                principal es el de preservar y respetar nuestro ecosistema.
+            </p>
+
+            <div class="mensajeFinal__imagen">
+                <img src="css/imagenes/walleRobot.jpg" alt="Robot Wall-e ama la tierra" class="mensajeFinal__imagen">
+            </div>
+
+        </div>
+
+        
+        <form class="contacto" id="contacto">
+
+            <h1 class="contacto__titulo">Quieres Ponerte en contacto con nosotros?</h1>
+
+            <label for="nombreapellido">Ingresa tu nombre y apellido aquí</label>
+            <input type="text" id="nombreapellido" class="input-padron" required>
+
+            <label for="correoelectronico">Aquí tu e-mail</label>
+            <input type="email" id="correoelectronico"class="input-padron" required placeholder="email@dominio.com">
+
+            <label for="telefono">Aquí tu teléfono</label>
+            <input type="tel" id="telefono" class="input-padron" required placeholder="(XX) XXXX XXXX">
+            
+            <label for="mensaje">Déjanos un mensaje!</label>
+            <textarea cols="23" rows="4" id="mensaje" class="input-padron" required></textarea>
+            
+            <fieldset>
+
+                <legend>¿Cómo le gustaría que lo contactemos?</legend>
+            
+                <label for="radio-email"><input type="radio" name="contacto" value="email" id="radio-email">Email</label>  
+
+                <label for="radio-telefono"> <input type="radio" name="contacto" value="telefono" id="radio-telefono">Teléfono</label>
+               
+                <label for="radio-whatsapp"><input type="radio" name="contacto" value="whatsapp" id="radio-whatsapp" checked>Whatsapp</label>
+                
+            </fieldset>
+
+            <input type="submit" name="contacto" value="Enviar formulario" class="enviar">
+            
+        </form>
+
+        <footer>
+            <img class="footer__imagen"src="css/imagenes/logopng.png" alt="Logo Mecha industries">
+            <p class="copyright">&copy Copyright Tomás Gomez - 2023</p>
+        </footer>
+
+    </body>
+</html>
